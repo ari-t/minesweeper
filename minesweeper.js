@@ -104,8 +104,7 @@ function countSurroundingMines (cell) {
 
 const Loser = _ => {
   const uglyCry = new Audio ('ari-t.github.io/gallery/uglyCry.mp3')
-  // if isMine && not hidden
-  // play losing sound with no loop
+
   uglyCry.loop = false;
 
   board.cells.forEach((box) => {
