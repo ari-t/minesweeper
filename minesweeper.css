@@ -2,7 +2,7 @@
 
 html, body {
   height: 100%;
-  font-family: Quicksand, Open sans, sans-serif
+  font-family: Quicksand, sans-serif
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") #ffeaea;
+  background: no-repeat center/60% url("https://pbs.twimg.com/media/CazZAe2W0AE4jc4.jpg") white;
 }
 
 div.hidden {
@@ -60,4 +60,21 @@ div.hidden:hover {
 
 div.marked, div.marked:hover {
   background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+}
+
+button {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px #ffeaea dotted;
+  background: #ffeaea;
+  font-family: 'Quicksand';
+  font-size: 1rem;
+  border-radius: 25px;
+  color: black;
+  margin: 2rem;
+}
+
+button:hover {
+  background: white;
+  color: #black;
 }
