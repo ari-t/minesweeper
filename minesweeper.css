@@ -1,6 +1,8 @@
+@import"https://fonts.googleapis.com/css?family=Cabin+Sketch|Quicksand";
+
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: Quicksand, sans-serif
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #be6363;
 }
 
 #message {
@@ -26,7 +29,7 @@ body {
 }
 
 .board div {
-  color: green;
+  color: black;
   font-size: 2rem;
   width: 75px;
   height: 75px;
@@ -44,11 +47,11 @@ body {
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/60% url("images/bomb.svg") #ffeaea;
 }
 
 div.hidden {
-  background: #eee;
+  background: #ffeaea;
 }
 
 div.hidden:hover {
