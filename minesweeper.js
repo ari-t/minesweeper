@@ -54,7 +54,7 @@ function startGame () {
 
   document.addEventListener('click', checkForWin); // call check for win function on click
   document.addEventListener('contextmenu', checkForWin);
-  //document.addEventListener('click', Loser)
+  document.addEventListener('click', Loser)
 }
 // Define this function to look for a win condition:
 //
@@ -100,8 +100,10 @@ function countSurroundingMines (cell) {
   }
   return count;
 }
-/*const Loser = _ => {
-  const uglyCry = new Audio ('~/ari-t.github.io/gallery/uglyCry.mp3')
+
+
+const Loser = _ => {
+  const uglyCry = new Audio ('~/dev-academy/blog/ari-t.github.io/gallery/uglyCry.mp3')
   // if isMine && not hidden
   // play losing sound with no loop
   uglyCry.loop = false;
@@ -111,4 +113,4 @@ function countSurroundingMines (cell) {
       uglyCry.play()
     }
   })
-}*/
+}
