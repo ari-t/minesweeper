@@ -52,9 +52,9 @@ function startGame () {
   board.cells[i].surroundingMines = countSurroundingMines(board.cells[i])
 }
 
-  document.addEventListener('click', checkForWin); // call check for win function on click
+  document.addEventListener('click', checkForWin); 
   document.addEventListener('contextmenu', checkForWin);
-  document.addEventListener('click', Loser)
+  //document.addEventListener('click', youLose)
 }
 // Define this function to look for a win condition:
 //
@@ -79,6 +79,7 @@ function checkForWin () {
   lib.displayMessage('YAAAAAAAAAASSSSSSSS!')
  
  }
+ 
 
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
@@ -102,14 +103,29 @@ function countSurroundingMines (cell) {
 }
 
 
-const Loser = _ => {
-  const uglyCry = new Audio ('ari-t.github.io/gallery/uglyCry.mp3')
+// var youLose;
+// function preload(){
+//   uglyCry = loadSound("sounds/uglyCry.mp3");
+// }
 
-  uglyCry.loop = false;
+// function setup() {
+//   uglyCry.play();
+// }
 
-  board.cells.forEach((box) => {
-    if(box.isMine && !box.hidden) {
-      uglyCry.play()
-    }
-  })
+
+// var Loser =
+// board.cells.forEach((box) => {
+//   if(box.isMine && !box.hidden) {
+//     audio.play();
+//   }
+// })
+
+var uglyCry = document.getElementById("audio");
+ function playAudio(){
+   uglyCry.play();
+ }
+
+var thankUNext= document.getElementById("container");
+function playAudio(){
+  audio2.play();
 }

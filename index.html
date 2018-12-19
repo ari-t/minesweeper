@@ -6,13 +6,19 @@
     <script src="lib/tests.js"></script>
     <script src="lib/lib.js"></script>
     <script src="minesweeper.js"></script>
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> 
   </head>
   <body>
     <div id="message"></div>
     <div id="notes"></div>
     <div class="board"></div>
     <div class="container">
-        <button class="reset" onclick="window.location.reload()">Thank u next bitch!</button>
+        <button class="reset" onclick="window.location.reload()" onclick="audio2.play()">You're doing amazing, sweetie!</button>
       </div>
+    <audio id="audio" src="./sounds/uglyCry.mp3"></audio>
+    <script>
+      var audio2 = new Audio("./sounds/thankUNext.mp3")
+    </script>
+    <!-- <audio id="audio2" src="./sounds/thankUNext.mp3" preload="auto"> -->
   </body>
 </html>
