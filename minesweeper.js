@@ -77,6 +77,7 @@ function checkForWin () {
   };
 
   lib.displayMessage('YAAAAAAAAAASSSSSSSS!')
+  audio2.play();
  
  }
  
